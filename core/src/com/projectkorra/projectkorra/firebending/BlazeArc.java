@@ -43,7 +43,7 @@ public class BlazeArc extends FireAbility {
 
 		this.direction = direction.clone();
 		this.direction.setY(0);
-		this.direction = this.direction.clone().normalize();
+		this.direction = this.direction.clone().normalize().multiply(2);
 		this.location = this.location.clone().add(this.direction);
 
 		this.time = System.currentTimeMillis();
